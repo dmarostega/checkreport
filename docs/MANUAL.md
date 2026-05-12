@@ -1,41 +1,102 @@
-# Manual do Proposta Fácil
+# Manual — CheckReport5
 
 ## Visão geral
 
-O Proposta Fácil ajuda profissionais autônomos e pequenos negócios a criar propostas comerciais, controlar status e enviar um link público para o cliente aprovar ou recusar.
+O CheckReport5 é um sistema para criação de checklists, vistorias simples, relatórios operacionais e registros técnicos não regulados.
 
-## Como cadastrar clientes
+## Clientes
 
-1. Acesse a área autenticada.
-2. Abra `Clientes`.
-3. Informe nome, e-mail, telefone, documento, endereço e observações.
-4. Salve. Clientes ficam isolados por usuário.
+Nesta área será possível cadastrar e gerenciar clientes.
 
-## Como criar propostas
+## Modelos de checklist
 
-1. Abra `Propostas` e selecione um cliente.
-2. Defina título, descrição, validade, observações e condições comerciais.
-3. Adicione itens com descrição, quantidade e valor unitário.
-4. Opcionalmente informe desconto.
-5. O sistema calcula subtotal e total e valida o limite do plano.
+Nesta área será possível criar modelos reutilizáveis de checklist.
 
-## Como enviar link público
+Cada modelo poderá conter:
 
-Ao criar a proposta, o sistema gera um token público seguro. Envie a URL `/p/{token}` ao cliente. O cliente não precisa de login para visualizar, aprovar ou recusar.
+- Nome
+- Descrição
+- Status ativo/inativo
+- Seções
+- Campos personalizados
 
-## Como funcionam os planos
+## Seções
 
-- **Gratuito**: até 3 propostas por mês, sem logo personalizada.
-- **Pro**: até 50 propostas por mês e PDF.
-- **Plus**: propostas ilimitadas, PDF e logo personalizada.
+As seções ajudam a organizar o checklist em grupos.
 
-Pagamentos não estão implementados no MVP. O plano é alterado manualmente pelo admin.
+Exemplos:
 
-## Como o admin gerencia usuários e planos
+- Dados iniciais
+- Ambiente
+- Equipamentos
+- Itens verificados
+- Fotos
+- Observações finais
 
-A área `/admin` exige role `admin`. O admin pode:
+## Campos personalizados
 
-- Criar, editar e desativar planos.
-- Listar usuários, ativar/desativar e alterar plano manualmente.
-- Atualizar configurações globais do aplicativo.
-- Consultar relatório básico de usuários, usuários por plano, propostas criadas e aprovadas.
+Tipos de campos previstos:
+
+- Texto
+- Número
+- Sim/Não
+- Seleção
+- Data
+- Foto
+- Observação
+
+## Preenchimento de checklist
+
+O usuário poderá preencher um checklist com base em um modelo previamente criado.
+
+Cada preenchimento poderá conter:
+
+- Cliente
+- Local
+- Responsável
+- Data
+- Respostas
+- Fotos
+- Observações
+
+## Relatórios
+
+Após o preenchimento, o sistema poderá gerar um relatório com as informações registradas.
+
+Status previstos:
+
+- Rascunho
+- Concluído
+- Enviado
+- Arquivado
+- Cancelado
+
+## Fotos
+
+O sistema poderá permitir upload de fotos relacionadas ao relatório.
+
+## Link público
+
+O sistema poderá disponibilizar um link público para visualização de relatório concluído.
+
+Por padrão, links públicos de relatório devem ser protegidos por token e não devem ser indexados por buscadores.
+
+## Planos
+
+O sistema terá plano gratuito e planos pagos configuráveis pelo painel admin.
+
+## Painel admin
+
+O admin poderá gerenciar usuários, planos, configurações globais e templates globais opcionais.
+
+## Aviso importante
+
+O CheckReport5 é uma ferramenta de organização e registro.
+
+Ele não substitui responsabilidade técnica, assinatura profissional, ART, laudo jurídico, laudo médico, laudo de engenharia ou documento regulado.
+
+A responsabilidade pelo conteúdo gerado é do usuário/profissional.
+
+## Observação
+
+Este manual será atualizado conforme o desenvolvimento evoluir.

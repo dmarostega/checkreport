@@ -1,31 +1,51 @@
-# Roadmap do Proposta Fácil
 
-## Fase 1 — MVP base ✅
+---
 
-- [x] Estrutura Laravel 13 com Vue 3, TypeScript, Tailwind e Vite.
-- [x] Entidades principais: usuários, planos, clientes, serviços, propostas, itens, tokens públicos e configurações.
-- [x] Seeders para admin, planos iniciais e configurações.
-- [x] Services para criação de propostas, limites de plano e aprovação pública.
-- [x] Policies e middleware admin.
-- [x] Páginas públicas com SEO básico, robots.txt e sitemap.xml.
-- [x] Testes mínimos de proposta, limite gratuito, aprovação pública e admin protegido.
+## `docs/ROADMAP.md`
 
-## Fase 2 — Experiência do usuário
+```md
+# Roadmap — CheckReport5
 
-- [ ] Telas Inertia completas para CRUDs autenticados.
-- [ ] Upload de logo com validação por plano.
-- [ ] Editor visual de proposta e pré-visualização.
-- [ ] E-mails transacionais para envio e aprovação.
+## Fase 1 — MVP
 
-## Fase 3 — Documentos e automações
+- [ ] Criar autenticação
+- [ ] Criar dashboard
+- [ ] Criar CRUD de clientes
+- [ ] Criar CRUD de modelos de checklist
+- [ ] Criar seções nos modelos
+- [ ] Criar campos personalizados
+- [ ] Criar preenchimento de checklist
+- [ ] Criar status dos relatórios
+- [ ] Criar painel admin
+- [ ] Criar CRUD de planos
+- [ ] Criar controle de limites por plano
+- [ ] Criar páginas públicas
+- [ ] Criar SEO básico
+- [ ] Criar robots.txt
+- [ ] Criar sitemap.xml
 
-- [ ] Gerador PDF real com template personalizável.
-- [ ] Histórico de eventos da proposta.
-- [ ] Notificações quando cliente visualizar, aprovar ou recusar.
+## Fase 2 — Melhorias
 
-## Fase 4 — Cobrança futura
+- [ ] Upload de fotos
+- [ ] Geração de relatório
+- [ ] Link público de visualização
+- [ ] Templates globais opcionais
+- [ ] Relatórios básicos
+- [ ] Personalização de cores e logo
 
-- [ ] Integração Pix/checkout.
-- [ ] Portal de assinatura.
-- [ ] Webhooks de pagamento.
-- [ ] Métricas SaaS avançadas.
+## Fase 3 — Monetização
+
+- [ ] Plano gratuito
+- [ ] Planos pagos
+- [ ] Controle manual de assinaturas
+- [ ] Integração futura com Pix
+- [ ] Integração futura com checkout externo
+
+## Fase 4 — Evolução
+
+- [ ] PDF do relatório
+- [ ] Assinatura simples de recebimento
+- [ ] Exportação CSV
+- [ ] Multiusuário por conta
+- [ ] Biblioteca de templates
+- [ ] Dashboard avançado
