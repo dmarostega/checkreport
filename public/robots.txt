@@ -1,2 +1,46 @@
+# CheckReport5 Robots.txt
+# Permite indexação de páginas públicas, bloqueia admin, dashboard e rotas privadas
+
 User-agent: *
-Disallow:
+Allow: /
+Allow: /recursos
+Allow: /precos
+Allow: /termos
+Allow: /privacidade
+
+# Bloquear admin
+Disallow: /admin
+Disallow: /admin/
+
+# Bloquear dashboard autenticado
+Disallow: /dashboard
+Disallow: /dashboard/
+
+# Bloquear rotas autenticadas de CRUD
+Disallow: /customers
+Disallow: /templates
+Disallow: /reports
+
+# Bloquear autenticação
+Disallow: /login
+Disallow: /register
+Disallow: /forgot-password
+Disallow: /reset-password
+Disallow: /verify-email
+Disallow: /confirm-password
+Disallow: /profile
+
+# Bloquear API (se houver)
+Disallow: /api/
+
+# Bloquear storage/uploads privados
+Disallow: /storage/
+
+# Permitir acesso ao sitemap
+Allow: /sitemap.xml
+
+# Referência ao sitemap
+Sitemap: https://checkreport.app/sitemap.xml
+
+# Rate limiting para crawlers
+Crawl-delay: 1
